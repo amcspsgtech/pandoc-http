@@ -1,5 +1,4 @@
-FROM node:7.2
-MAINTAINER Dennis Wolters <mail@dwolt.de>
+FROM node:lts-alpine
 
 ENV PANDOC_VERSION 1.19
 ENV NODE_ENV production
