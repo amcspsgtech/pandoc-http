@@ -1,9 +1,9 @@
 FROM node:lts-alpine
 
-ENV PANDOC_VERSION 1.19
-ENV NODE_ENV production
+# ENV PANDOC_VERSION 1.19
+# ENV NODE_ENV production
 
-RUN wget https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION}-1-amd64.deb && \
+RUN wget https://github.com/jgm/pandoc/releases/download/3.1.12.2/pandoc-3.1.12.2-1-amd64.deb && \
     dpkg -i pandoc* && \
     rm pandoc* && \
     apt-get clean
